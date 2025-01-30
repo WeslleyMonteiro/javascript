@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando o JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt ('Digite um número: ')) // Sem o conversor é uma string
+        var n2 = Number.parseFloat(window.prompt ('Digite outro número: ')) // Sem o conversor é uma string
+        var s = n1 + n2
+        alert (`A soma entre ${n1} e ${n2} é igual a ${s}`) // Concatenação o conversor de string ai não precisa, só foi pra exemplo
+        // (number) + (number) - é soma ex. 1+1 = 2
+        //(string) + (string) - é concatenação ex. 1+3 = 13
+        // Precisa usar os conversores pra esse caso ou o Number.parseInt, Number.parseFloat e o Number
+
+    </script>
+
+    
+</body>
+</html>
