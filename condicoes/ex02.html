@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1> Qual sua nacionalidade? [DEMO]</h1>
+    País <input type="text" name="pais" id="pais" placeholder="Digite seu país">
+    <input type="button" value="Enviar" onclick="resposta ()">
+    <div id="res">
+    </div>
+    
+
+    <script>
+        function resposta() {
+            var txt = document.querySelector ('input#pais')
+            var res = document.querySelector('div#res')
+            if (txt == 'Brasil') {
+                res.innerHTML ='Você é Brasileiro'
+            } else {
+                res.innerHTML ='Você é Estrangeiro'
+            }
+        }
+    </script>
+    
+</body>
+</html>
